@@ -1,0 +1,83 @@
+/* styling reset (https://www.joshwcomeau.com/css/custom-css-reset/) */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  /* border: 1px solid red; */
+}
+html, body {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  /* background: rgb(255,0,0);
+  background: linear-gradient(180deg, rgba(255,0,0,1) 0%, rgba(255,109,0,1) 16.666%, rgba(255,237,0,1) 33.333%, rgba(11,255,0,1) 50%, rgba(0,200,255,1) 66.666%, rgba(1,0,255,1) 83.333%, rgba(169,0,255,1) 100%);  */
+}
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+input, button, textarea, select, a {
+  font: inherit;
+  -webkit-tap-highlight-color: transparent;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+#root, #__next {
+  isolation: isolate;
+}
+/* end styling reset */
+/* global */
+section, nav, footer {
+  margin-inline: auto;
+  width: 100%;
+}
+.container {
+  width: 90%;
+  margin-inline: auto;
+}
+h1 {
+  font-size: 6rem;
+  font-family: 'Archivo Black', sans-serif;
+}
+/* end global */
+
+/* hero */
+.linear-animation {
+  text-align: center;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  --color-one: #f00;
+  --color-two: #f50;
+  --color-three: #ffda1f;
+  --color-four: #5f0;
+  --color-five: #00eaff;
+  --color-six: #1500ff;
+  --color-seven: #ff00f2;
+  --bg-size: 400%;
+  background: linear-gradient(
+                  90deg,
+                  var(--color-one),
+                  var(--color-two),
+                  var(--color-three),
+                  var(--color-four),
+                  var(--color-five),
+                  var(--color-six),
+                  var(--color-seven),
+                  var(--color-one)
+                ) 0 0 / var(--bg-size) 100%;
+
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: move-bg 4s infinite linear;
+}
+@keyframes move-bg {
+to {
+  background-position: var(--bg-size) 0;
+}
+}
+/* end hero */
