@@ -140,19 +140,19 @@ h1.linear-animation2, h1.linear-animation4 {
   animation: move-bg 4s infinite linear;
 }
 h1.linear-animation {
-  top: 5%;
+  top: 9%;
   left: 2%;
 }
 h1.linear-animation2 {
-  top: 12%;
+  top: 15%;
   right: 10%;
 }
 h1.linear-animation3 {
-  top: 20%;
+  top: 25%;
   left: 40%;
 }
 h1.linear-animation4 {
   top: 60%;
-  right: 20%;
+  right: 18%;
 }
 /* end hero */
