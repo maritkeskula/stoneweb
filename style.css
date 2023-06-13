@@ -61,13 +61,15 @@ h1 {
   display: flex;
   justify-content: center;
   margin: 5rem 0;
+  max-width: 25rem;
+  margin-inline: auto;
 }
 .nav-container img {
   animation-name: spin;
   animation-duration: 2000ms;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-  min-width: 10rem;
+  width: 80%;
 }
 @keyframes spin {
     from {
