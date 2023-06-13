@@ -40,13 +40,43 @@ section, nav, footer {
   margin-inline: auto;
 }
 h1 {
-  font-size: 6rem;
+  font-size: 3rem;
   font-family: 'Archivo Black', sans-serif;
 }
 /* end global */
-
+/* nav */
+.nav-container {
+  display: flex;
+  justify-content: center;
+  margin: 5rem 0;
+}
+.nav-container img {
+  animation-name: spin;
+  animation-duration: 2000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
 /* hero */
-.linear-animation {
+.hero-container {
+  display: flex;
+  justify-content: center;
+}
+.heroimage {
+  max-width: 45rem;
+  position: relative;
+}
+h1.linear-animation,
+h1.linear-animation2,
+h1.linear-animation3,
+h1.linear-animation4 {
   text-align: center;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
@@ -74,10 +104,57 @@ h1 {
   background-clip: text;
   -webkit-background-clip: text;
   animation: move-bg 4s infinite linear;
+
 }
 @keyframes move-bg {
 to {
   background-position: var(--bg-size) 0;
 }
+}
+h1.linear-animation2, h1.linear-animation4 {
+  --color-one: #f00;
+  --color-two: #f50;
+  --color-three: #ffda1f;
+  --color-four: #5f0;
+  --color-five: #00eaff;
+  --color-six: #1500ff;
+  --color-seven: #ff00f2;
+  --bg-size: 400%;
+  background: linear-gradient(
+                  90deg,
+                  var(--color-seven),
+                  var(--color-six),
+                  var(--color-five),
+                  var(--color-four),
+                  var(--color-three),
+                  var(--color-two),
+                  var(--color-one),
+                  var(--color-seven)
+                ) 0 0 / var(--bg-size) 100%;
+
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: move-bg 4s infinite linear;
+}
+h1.linear-animation {
+  position: absolute;
+  top: 2rem;
+  left: 1rem;
+}
+h1.linear-animation2 {
+  position: absolute;
+  top: 3rem;
+  right: 2rem;
+}
+h1.linear-animation3 {
+  position: absolute;
+  top: 7rem;
+  left: 5rem;
+}
+h1.linear-animation4 {
+  position: absolute;
+  top: 10rem;
+  right: 6rem;
 }
 /* end hero */
