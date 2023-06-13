@@ -78,6 +78,7 @@ h1.linear-animation,
 h1.linear-animation2,
 h1.linear-animation3,
 h1.linear-animation4 {
+  position: absolute;
   text-align: center;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
@@ -139,23 +140,19 @@ h1.linear-animation2, h1.linear-animation4 {
   animation: move-bg 4s infinite linear;
 }
 h1.linear-animation {
-  position: absolute;
-  top: 2rem;
-  left: 1rem;
+  top: 5%;
+  left: 2%;
 }
 h1.linear-animation2 {
-  position: absolute;
-  top: 3rem;
-  right: 2rem;
+  top: 12%;
+  right: 10%;
 }
 h1.linear-animation3 {
-  position: absolute;
-  top: 7rem;
-  left: 5rem;
+  top: 20%;
+  left: 40%;
 }
 h1.linear-animation4 {
-  position: absolute;
-  top: 10rem;
-  right: 6rem;
+  top: 60%;
+  right: 20%;
 }
 /* end hero */
